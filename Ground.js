@@ -1,9 +1,13 @@
 class Ground {
     constructor(x,y,width,height) {
-        var options = {
+        var ground_options = {
             isStatic: true
         }
-        this.body = Bodies.rectangle(x,y,width,height,options);
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+        this.body = Bodies.rectangle(this.x,this.y,this.width,this.height,ground_options);
         this.width = width;
         this.height = height;
         World.add(world, this.body);
