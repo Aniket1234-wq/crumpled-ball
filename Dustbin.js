@@ -20,9 +20,13 @@ class dustbin
 		World.add(world, this.leftWallBody)
 		World.add(world, this.rightWallBody);
 
+		this.image = loadImage("animate/dustbin.png");
+
+
 	}
 	display()
 	{
+		image(this.dustbin, 1200, 650);
 			var posBottom=this.bottomBody.position;
 			var posLeft=this.leftWallBody.position;
 			var posRight=this.rightWallBody.position;

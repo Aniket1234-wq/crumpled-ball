@@ -16,9 +16,13 @@ class paper
 		this.body=Bodies.circle(this.x, this.y, this.r/2, options)
 		World.add(world, this.body);
 
+		this.image = loadImage("animate/paper.png");
+
+
 	}
 	display()
 	{
+		image(this.paper, 200,450,40);
 			
 			var paperpos=this.body.position;		
 
