@@ -26,7 +26,6 @@ class dustbin
 	}
 	display()
 	{
-		image(this.dustbin, 1200, 650);
 			var posBottom=this.bottomBody.position;
 			var posLeft=this.leftWallBody.position;
 			var posRight=this.rightWallBody.position;
@@ -56,13 +55,14 @@ class dustbin
 			pop()
 
 			push()
-			translate(posBottom.x, posBottom.y);
+			translate(posBottom.y+10);
 			rectMode(CENTER)
 			//strokeWeight(4);
 			stroke(255)
 			angleMode(RADIANS)
 			fill(255)
-			rect(0,0,this.dustbinWidth, this.wallThickness);
+			imageMode(CENTER);
+			image(this.image, 0,-this.dustbinHeight/2,this.dustbinWidth, this.dustbinHeight);
 			pop()
 			
 	}

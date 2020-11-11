@@ -22,16 +22,16 @@ class paper
 	}
 	display()
 	{
-		image(this.paper, 200,450,40);
 			
-			var paperpos=this.body.position;		
+			var paperpos=this.body.position;
+			imageMode(CENTER);
+			image(this.image, 0,0,this.r, this.r)	
 
 			push()
 			translate(paperpos.x, paperpos.y);
 			rectMode(CENTER)
 			strokeWeight(3);
 			fill(255,0,255)
-			ellipse(0,0,this.r, this.r);
 			pop()
 			
 	}
