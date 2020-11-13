@@ -55,7 +55,7 @@ class dustbin
 			pop()
 
 			push()
-			translate(posBottom.y+10);
+			translate(posBottom.x,posBottom.y+10);
 			rectMode(CENTER)
 			//strokeWeight(4);
 			stroke(255)
